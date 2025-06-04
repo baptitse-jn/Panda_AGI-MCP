@@ -1,0 +1,21 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/mcp"
+  to = "/.netlify/functions/pandaagi-mcp"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/mcp/*"
+  to = "/.netlify/functions/pandaagi-mcp"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/pandaagi"
+  to = "/.netlify/functions/pandaagi-mcp"
+  status = 200
+  force = true

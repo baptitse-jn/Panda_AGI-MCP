@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "pandaagi-local": {
+      "command": "npx",
+      "args": [
+        "mcp-remote@next",
+        "http://localhost:8888/mcp"
+      ],
+      "description": "Local PandaAGI MCP server for development"
+    },
+    "pandaagi-production": {
+      "command": "npx", 
+      "args": [
+        "mcp-remote@next",
+        "https://your-site-name.netlify.app/mcp"
+      ],
+      "description": "Production PandaAGI MCP server on Netlify"
+    }
+  }
+}
